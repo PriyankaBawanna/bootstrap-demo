@@ -1,0 +1,21 @@
+.menu-container {
+  margin-left: 2rem;
+}
+#parent {
+  height: 40rem;
+}
+#child {
+  height: 100%;
+}
+.intro {
+  padding: 0.5rem;
+  margin-left: 5rem;
+}
+.service {
+  height: 50rem;
+  width: 100%;
+}
+.box {
+  height: 20rem;
+  width: 20%;
+}
