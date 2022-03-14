@@ -1,6 +1,3 @@
-.menu-container {
-  margin-left: 2rem;
-}
 #parent {
   height: 40rem;
 }
@@ -15,7 +12,42 @@
   height: 50rem;
   width: 100%;
 }
-.box {
+.project {
   height: 20rem;
-  width: 20%;
+  width: 100%;
+}
+.box {
+  background-image: url("../Asstes/card-one.jpg");
+  height: 20rem;
+  width: 20rem;
+  border-radius: 2rem;
+}
+.box:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(248, 0, 77, 1),
+    rgba(255, 0, 71, 0.6) 100%
+  );
+  opacity: 0.3;
+  transform: scale(1.2);
+}
+.more-btn {
+  width: 15rem;
+  height: 5rem;
+  background-color: #f9004d;
+  border-radius: 0.8rem;
+}
+.more-btn:hover {
+  background-color: black;
+  border-color: #f9004d;
+  color: #f9004d;
+}
+.contact {
+  height: 50rem;
+  width: 100%;
+}
+.form-input {
+  background-color: inherit;
+  width: 22rem;
+  height: 3rem;
 }
