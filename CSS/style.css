@@ -43,11 +43,6 @@
   color: #f9004d;
 }
 .contact {
-  height: 50rem;
+  height: auto;
   width: 100%;
-}
-.form-input {
-  background-color: inherit;
-  width: 22rem;
-  height: 3rem;
 }
