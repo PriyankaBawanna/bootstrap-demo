@@ -1,51 +1,67 @@
 html {
   scroll-behavior: smooth;
 }
-#parent {
-  height: 40rem;
+
+body {
+  background-color: black;
 }
-#child {
-  height: 100%;
+.dropdown-color {
+  background-color: black;
 }
-.intro {
-  padding: 0.5rem;
-  margin-left: 5rem;
-}
-.service {
-  height: 50rem;
-  width: 100%;
-}
-.project {
-  height: 20rem;
-  width: 100%;
-}
+
 .box {
   background-image: url("../Asstes/card-one.jpg");
   height: 20rem;
   width: 20rem;
   border-radius: 2rem;
 }
-.box:hover {
-  background: linear-gradient(
-    180deg,
-    rgba(248, 0, 77, 1),
-    rgba(255, 0, 71, 0.6) 100%
-  );
-  opacity: 0.3;
-  transform: scale(1.2);
-}
-.more-btn {
-  width: 15rem;
-  height: 5rem;
-  background-color: #f9004d;
-  border-radius: 0.8rem;
-}
-.more-btn:hover {
+
+.contact-btn {
   background-color: black;
-  border-color: #f9004d;
-  color: #f9004d;
+  color: white;
 }
-.contact {
-  height: auto;
-  width: 100%;
+.header-container {
+  height: 4rem;
+  background-color: black;
+}
+.heading-Portfolio {
+  display: none;
+}
+@media screen and (max-width: 995px) {
+  .contact-btn {
+    display: none;
+  }
+  .heading-Portfolio {
+    display: block;
+  }
+}
+.home-page-mobile {
+  display: none;
+}
+@media screen and (max-width: 896px) {
+  .home {
+    display: none;
+  }
+  .intro-home-page-2 {
+    display: none;
+  }
+  .img-home-page {
+    display: none;
+  }
+  .home-page-mobile {
+    height: 55rem;
+    width: 100%;
+    background-image: url("Asstes/bg-body-img\ \(1\).jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-view-home {
+    padding: 5rem;
+  }
+}
+.input-form {
+  background-color: black;
+  color: white;
 }

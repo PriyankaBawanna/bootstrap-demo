@@ -1,0 +1,14 @@
+.home-page {
+  display: block;
+}
+.home {
+  height: 50rem;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-home-page {
+  width: 50%;
+}

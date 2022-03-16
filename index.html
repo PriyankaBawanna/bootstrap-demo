@@ -14,14 +14,41 @@
     />
     <link rel="icon" href="./Asstes/logo-symbol-dark.png" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/homePage.css" />
     <title>Priyanka Bawanna</title>
+    <style>
+         @media screen and (max-width: 896px) {
+        .intro-home-page {
+          display: none;
+        }
+        .img-home-page {
+          display: none;
+        }
+        .home {
+          display: none;
+        }
+        .home-page-mobile {
+          height: 55rem;
+          width: 100%;
+          background-image: url("Asstes/bg-body-img\ \(1\).jpg");
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .mobile-view-home {
+          padding: 5rem;
+        }
+      
+      }  
+    </style>
   </head>
-  <body style="background-color: black; height: auto">
-    <div class="container-fluid">
-      <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top"
-        style="background-color: black"
-      >
+  <body>
+        <div class="d-flex flex-column bd-highlight">
+      <header
+        class="p-2 bd-highlight border border-dark fixed-top header-container"
+        >
+         <div class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
           <img
             src="./Asstes/logo-symbol-dark.png"
@@ -29,6 +56,7 @@
             alt="Flowers in Chania"
             style="height: 50px"
           />
+            <h3 class="heading-Portfolio text-light">Portfolio</h3>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,310 +68,296 @@
           >
             <span class="navbar-toggler-icon bg-white"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-sm-between col-lg-4"
-            id="navbarSupportedContent"
-          >
-            <div class="text-white">
-              <div class="row">
-                <div
-                  class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-sm-between"
-                >
-                  <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="#About"
-                      >About</a
-                    >
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="#Project"
-                      >Portfolio</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white fw-bold" href="#Contactme"
-                      >More</a
-                    >
-                  </li>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="text-white">
-                <button type="button" class="btn btn-dark border border-white">
-                  Contact Me
-                </button>
-              </div>
-            </div>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+             <ul class="navbar-nav  px-2 ">
+        <li class="px-2">
+          <a class="nav-link text-light fw-bold" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="px-2">
+          <a class="nav-link text-light fw-bold" aria-current="page" href="#">About</a>
+        </li>
+          <li class="px-2">
+          <a class="nav-link text-light fw-bold" aria-current="page" href="#">Portfolio</a>
+        </li>
+        <li class="px-2">
+          <a class="nav-link text-light fw-bold" aria-current="page" href="#">Contact</a>
+          </li>
+            
           </div>
+             <button type="" class="contact-btn px-4 py-2 border border-white rounded fw-bold">Contact Me</button>      
         </div>
-      </nav>
-      <div class="container-fluid" id="parent">
-        <div class="row mt-5 mb-5" style="height: 30rem">
-          <div class="col-xxl-6 col-lg-6 col-sm-6 text-ligh">
-            <div class="row mt-5">
-              <div class="col-lg-12 mt-5">
-                <span class="intro text-light">WELCOME TO MY WORLD</span>
-                <h1 class="intro text-light mt-5 mb-3">
-                  Hi, I’m Priyanka Bawanna front-end web developer. based in
-                  India.
-                </h1>
+      </div>
+
+    </header>
+      <main>
+          <div class="container-fluid home">
+        <div class="row">
+          <div
+            class="col-sm-6 d-flex flex-column justify-content-center align-items-center home"
+          >
+            <div class="px-5 align-items-center text-light">
+              <div class="mb-5">
+                <span class="text-light">welcome to my world</span>
               </div>
+
+              <h1>
+                Hi, I’m Priyanka Bawanna front-end web developer. based in
+                India.
+              </h1>
             </div>
           </div>
-          <div class="col-xxl-6 col-lg-6 col-sm-6 text-ligh">
+          <div class="col-sm-6 img-home-page">
             <img
-              src="./Asstes/bg-body-img.jpg"
-              class="img-fluid mr-5 mt-3 mb-3"
-              alt="Flowers in Chania"
-              style="height: 75%"
+              src="./Asstes/bg-body-img (1).jpg"
+              class="img-fluid"
+              style="height: 50rem; width: 100%"
             />
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="row">
-            <div class="col-lg-6 pt-2 mt-3 mb-3">
-              <img
-                src="./Asstes/about.jpg"
-                class="img-fluid"
-                alt="Flowers in Chania"
-                style="height: 100%"
-              />
-            </div>
-            <div class="col-lg-6 col-xxl-6 text-light mt-3 mb-3" id="About">
-              <h1>About Me</h1>
-              <p>
-                At CES IT, I work as an associate software engineer. I am
-                well-versed in HTML, CSS, SASS, Bootstrap, JavaScript, and React
-                JS.
-              </p>
-              <div class="d-flex justify-content-between">
-                <div class="dropdown">
-                  <span
-                    class="dropdown"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <b><u>Main skills</u></b>
-                  </span>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                    style="background-color: black"
-                  >
-                    <li><span class="text-light">HTML</span></li>
-                    <li><span class="text-light">CSS</span></li>
-                    <li><span class="text-light">SASS</span></li>
-                    <li><span class="text-light">Bootstrap</span></li>
-                    <li><span class="text-light">JavaScript</span></li>
-                    <li>
-                      <span class="text-light" href="#">React JS</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="dropdown">
-                  <span
-                    class="dropdown"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <b><u>Experience</u></b>
-                  </span>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                    style="background-color: black"
-                  >
-                    <li>
-                      <span class="text-light"
-                        >CES IT's associate software engineer</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="dropdown">
-                  <span
-                    class="dropdown"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <b><u>Education & Certification</u></b>
-                  </span>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                    style="background-color: black"
-                  >
-                    <li><span class="text-light">M.E. CSE </span></li>
-                    <li><span class="text-light">B.E. IT</span></li>
-                  </ul>
-                </div>
+      </div>
+      <div class="container-fluid home-page-mobile">
+        <div class="row">
+          <div class="col-sm-12 mobile-view-home">
+             <div class="mb-5">
+                <span class="text-light">welcome to my world</span>
               </div>
-            </div>
+            <h1  class="text-white">
+              Hi, I’m Priyanka Bawanna front-end web developer. based in India.
+            </h1>
           </div>
         </div>
-
-        <div
-          class="container-fluid d-flex flex-column justify-content-center align-items-center pb-5 pt-5"
-        >
-          <h1 class="text-light fw-bold" id="Project">My Latest Project</h1>
-          <p class="text-light mt-2"></p>
-        </div>
-
-        <div class="d-flex justify-content-evenly parent flex-column mt-5">
-          <div class="row d-flex justify-content-evenly">
-            <div
-              class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
-            >
-              <h3 class="text-light ml-3">Movie Details</h3>
-              <div>
-                <button
-                  type="button"
-                  class="btn mt-2 border border-white text-light rounded"
-                  onclick="location.href='https://github.com/PriyankaBawanna/-MovieDetails-.git'"
-                >
-                  GitHub Repositories
-                </button>
-              </div>
-            </div>
-            <div
-              class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
-            >
-              <h3 class="text-light ml-3">HotStarClone</h3>
-              <div>
-                <button
-                  type="button"
-                  class="btn mt-2 border border-white text-light rounded"
-                  onclick="location.href='https://github.com/PriyankaBawanna/HotStarClone.git'"
-                >
-                  GitHub Repositories
-                </button>
-              </div>
-            </div>
-            <div
-              class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
-            >
-              <h3 class="text-light ml-3">Flipkart-Clone</h3>
-              <div>
-                <button
-                  type="button"
-                  class="btn mt-2 border border-white text-light rounded"
-                  onclick="location.href='https://github.com/PriyankaBawanna/Flipkart-Clone.git'"
-                >
-                  GitHub Repositories
-                </button>
-              </div>
-            </div>
-            <div
-              class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3"
-            >
-              <h3 class="text-light ml-3">GitHub Profiler</h3>
-              <div>
-                <button
-                  type="button"
-                  class="btn mt-2 border border-white text-light rounded"
-                  onclick="location.href='https://github.com/PriyankaBawanna/Github-repo.git'"
-                >
-                  GitHub Repositories
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center mt-5">
-          <button
+      </div>
+  
+      <!--about-->
+      <div class="d-flex justify-content-center">
+  <div class="row">
+    <div class="col-lg-6 pt-2 mt-3 mb-3">
+      <img
+        src="./Asstes/about.jpg"
+        class="img-fluid"
+        alt="Flowers in Chania"
+        style="height: 100%"
+      />
+    </div>
+    <div class="col-lg-6 col-xxl-6 text-light mt-3 mb-3" id="About">
+      <h1 class="mx-3 p-2">About Me</h1>
+      <p class="mx-3 p-2">
+        At CES IT, I work as an associate software engineer. I am well-versed in
+        HTML, CSS, SASS, Bootstrap, JavaScript, and React JS.
+      </p>
+      <div class="d-flex justify-content-between mx-3 p-2">
+        <div class="dropdown">
+          <span
+            class="dropdown"
             type="button"
-            class="btn fw-bold more-btn text-decoration-none"
-            onclick="location.href='https://github.com/PriyankaBawanna'"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-            VIEW MORE
-          </button>
+            <b><u>Main skills</u></b>
+          </span>
+          <ul
+            class="dropdown-menu dropdown-color"
+            aria-labelledby="dropdownMenuButton1"
+          
+          >
+            <li><span class="text-light">HTML</span></li>
+            <li><span class="text-light">CSS</span></li>
+            <li><span class="text-light">SASS</span></li>
+            <li><span class="text-light">Bootstrap</span></li>
+            <li><span class="text-light">JavaScript</span></li>
+            <li>
+              <span class="text-light" href="#">React JS</span>
+            </li>
+          </ul>
         </div>
-        <div class="container-fluid contact mt-5" id="Contactme">
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 d-flex flex-column">
-              <div
-                class="row d-flex flex-column justify-content-center align-items-center"
-              >
-                <div class="col-lg-6">
-                  <h1 class="text-light">Contact Me</h1>
-                </div>
-                <div class="col-lg-6">
-                  <p class="text-light"></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xxl-12">
-                  <form>
-                    <div class="form-group mt-3">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Your Name"
-                        style="background-color: black; color: white"
-                      />
-                    </div>
-                    <div class="form-group mt-3">
-                      <input
-                        type="email"
-                        class="form-control text-ligh"
-                        id="exampleFormControlInput1"
-                        placeholder="Your Email"
-                        style="background-color: black; color: white"
-                      />
-                    </div>
 
-                    <div class="form-group">
-                      <textarea
-                        class="form-control mt-3 form-input"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="your Message"
-                        style="background-color: black; color: white"
-                      ></textarea>
-                    </div>
-                    <div class="form-group">
-                      <button
-                        type="button"
-                        class="btn fw-bold more-btn text-decoration-none mt-3 mb-3"
-                        onclick="location.href='https://github.com/PriyankaBawanna'"
-                      >
-                        VIEW MORE
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 bg-Info">
-              <img
-                src="./Asstes/Contact.jpg"
-                class="img-fluid mr-5"
-                alt="Flowers in Chania"
-                style="height: 100%"
-              />
-            </div>
-          </div>
+        <div class="dropdown">
+          <span
+            class="dropdown"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <b><u>Experience</u></b>
+          </span>
+          <ul
+            class="dropdown-menu dropdown-color"
+            aria-labelledby="dropdownMenuButton1"
+          
+          >
+            <li>
+              <span class="text-light"
+                >CES IT's associate software engineer</span
+              >
+            </li>
+          </ul>
         </div>
-        <div
-          class="d-flex container-fluid align-items-center justify-content-center mt-5"
-        >
-          <p class="text-light">Copyright © 2022</p>
+        <div class="dropdown">
+          <span
+            class="dropdown"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <b><u>Education & Certification</u></b>
+          </span>
+          <ul
+            class="dropdown-menu dropdown-color"
+            aria-labelledby="dropdownMenuButton1"
+          
+          >
+            <li><span class="text-light">M.E. CSE </span></li>
+            <li><span class="text-light">B.E. IT</span></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div
+  class="container-fluid d-flex flex-column justify-content-center align-items-center pb-5 pt-5"
+>
+  <h1 class="text-light fw-bold" id="Project">My Latest Project</h1>
+  <p class="text-light mt-2"></p>
+</div>
+
+<div class="d-flex justify-content-evenly parent flex-column mt-5">
+  <div class="row d-flex justify-content-evenly">
+    <div
+      class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3 mx-3"
+    >
+      <h3 class="text-light ml-3">Movie Details</h3>
+      <div>
+        <button
+          type="button"
+          class="btn mt-2 border border-white text-light rounded"
+          onclick="location.href='https://github.com/PriyankaBawanna/-MovieDetails-.git'"
+        >
+          GitHub Repositories
+        </button>
+      </div>
+    </div>
+    <div
+      class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3 mx-3"
+    >
+      <h3 class="text-light ml-3">HotStarClone</h3>
+      <div>
+        <button
+          type="button"
+          class="btn mt-2 border border-white text-light rounded"
+          onclick="location.href='https://github.com/PriyankaBawanna/HotStarClone.git'"
+        >
+          GitHub Repositories
+        </button>
+      </div>
+    </div>
+    <div
+      class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3 mx-3"
+    >
+      <h3 class="text-light ml-3">Flipkart-Clone</h3>
+      <div>
+        <button
+          type="button"
+          class="btn mt-2 border border-white text-light rounded"
+          onclick="location.href='https://github.com/PriyankaBawanna/Flipkart-Clone.git'"
+        >
+          GitHub Repositories
+        </button>
+      </div>
+    </div>
+    <div
+      class="col-lg-6 bg-danger box d-flex flex-column justify-content-center align-items-center mt-3 mb-3 mx-3"
+    >
+      <h3 class="text-light ml-3">GitHub Profiler</h3>
+      <div>
+        <button
+          type="button"
+          class="btn mt-2 border border-white text-light rounded"
+          onclick="location.href='https://github.com/PriyankaBawanna/Github-repo.git'"
+        >
+          GitHub Repositories
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center mt-5">
+  <button
+    type="button"
+    class="btn btn btn-danger fw-bold  text-decoration-none"
+    onclick="location.href='https://github.com/PriyankaBawanna'"
+  >
+    VIEW MORE
+  </button>
+</div>
+<div class="container-fluid contact mt-5" id="Contactme">
+  <div class="row">
+    <div class="col-lg-6 col-sm-6 d-flex flex-column">
+      <div
+        class="row d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="col-lg-6">
+          <h1 class="text-light mx-5">Contact Me</h1>
+        </div>
+        <div class="col-lg-6">
+          <p class="text-light"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-12">
+          <form>
+            <div class="container  p-5">
+                <form>
+    <div>
+     
+      <input type="email" class="form-control mt-3 input-form" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div>
+     
+      <input type="password" class="form-control  mt-3 input-form" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="">
+              <textarea
+                class="form-control mt-3  input-form"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="your Message"
+              
+              ></textarea>
+            </div>
+  
+  <button type="button" class="btn btn-danger mt-3 px-3 py-3">SUBMIT</button>
+  </form>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-6 bg-Info">
+      <img
+        src="./Asstes/Contact.jpg"
+        class="img-fluid mr-5"
+        alt="Flowers in Chania"
+        style="height: 100%"
+      />
+    </div>
+  </div>
+</div>
+  <footer>
+      <div
+        class="d-flex container-fluid align-items-center justify-content-center mt-5"
+      >
+        <p class="text-light">Copyright © 2022</p>
+      </div>
+    </footer>
+  
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
